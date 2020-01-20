@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "duda-custom-spotify-widget"
+  },
+  "targets": {
+    "duda-custom-spotify-widget": {
+      "hosting": {
+        "portal": [
+          "duda-custom-music-portal"
+        ],
+        "widget": [
+          "duda-custom-spotify-widget"
+        ]
+      }
+    }
+  }
+}
