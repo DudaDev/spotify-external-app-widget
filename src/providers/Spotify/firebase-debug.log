@@ -1,0 +1,225 @@
+[debug] [2020-01-16T23:32:18.667Z] ----------------------------------------------------------------------
+[debug] [2020-01-16T23:32:18.669Z] Command:       /Users/jhummel/.nvm/versions/node/v10.18.1/bin/node /Users/jhummel/.nvm/versions/node/v10.18.1/bin/firebase emulators:start --only functions
+[debug] [2020-01-16T23:32:18.669Z] CLI Version:   7.12.1
+[debug] [2020-01-16T23:32:18.669Z] Platform:      darwin
+[debug] [2020-01-16T23:32:18.669Z] Node Version:  v10.18.1
+[debug] [2020-01-16T23:32:18.670Z] Time:          Thu Jan 16 2020 16:32:18 GMT-0700 (Mountain Standard Time)
+[debug] [2020-01-16T23:32:18.670Z] ----------------------------------------------------------------------
+[debug] [2020-01-16T23:32:18.670Z] 
+[debug] [2020-01-16T23:32:18.677Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-16T23:32:18.678Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/jhummel/repos/duda-widgets/spotify/functions" for Cloud Functions...
+[debug] [2020-01-16T23:32:18.981Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-16T23:32:18.981Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-16T23:32:18.981Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-16T23:32:18.982Z] [worker-~diagnostic~-288a3f29-dd16-4f06-ac8a-5cc7a2d9f870]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17348.sock
+[debug] [2020-01-16T23:32:18.982Z] [worker-~diagnostic~-288a3f29-dd16-4f06-ac8a-5cc7a2d9f870]: BUSY
+[debug] [2020-01-16T23:32:19.226Z] [runtime-status] [17348] Functions runtime initialized. {"cwd":"/Users/jhummel/repos/duda-widgets/spotify/functions","node_version":"10.18.1"}
+[debug] [2020-01-16T23:32:19.227Z] [runtime-status] [17348] Disabled runtime features: undefined
+[debug] [2020-01-16T23:32:19.230Z] [runtime-status] [17348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-16T23:32:19.231Z] [runtime-status] [17348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-16T23:32:19.468Z] [runtime-status] [17348] Found google-gax at /Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-16T23:32:19.469Z] [runtime-status] [17348] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-16T23:32:19.516Z] [runtime-status] [17348] Checked functions.config() {"config":{}}
+[debug] [2020-01-16T23:32:19.516Z] [runtime-status] [17348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-16T23:32:19.517Z] [runtime-status] [17348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-16T23:32:19.517Z] [runtime-status] [17348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-16T23:32:19.569Z] [runtime-status] [17348] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.1","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-admin/lib/index.js"}}
+[info] ✔  functions[api]: http function initialized (http://localhost:5001/duda-custom-spotify-widget/us-central1/api).
+[info] ✔  All emulators started, it is now safe to connect.
+[debug] [2020-01-16T23:32:20.120Z] [worker-~diagnostic~-288a3f29-dd16-4f06-ac8a-5cc7a2d9f870]: IDLE
+[debug] [2020-01-16T23:32:25.636Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-16T23:32:25.637Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-16T23:32:25.637Z] Accepted request GET /duda-custom-spotify-widget/us-central1/api/token --> api
+[debug] [2020-01-16T23:32:25.640Z] [worker-pool] addWorker(api)
+[debug] [2020-01-16T23:32:25.640Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-16T23:32:25.640Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-16T23:32:25.640Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-16T23:32:25.640Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: BUSY
+[debug] [2020-01-16T23:32:25.905Z] [runtime-status] [17349] Functions runtime initialized. {"cwd":"/Users/jhummel/repos/duda-widgets/spotify/functions","node_version":"10.18.1"}
+[debug] [2020-01-16T23:32:25.907Z] [runtime-status] [17349] Disabled runtime features: undefined
+[debug] [2020-01-16T23:32:25.909Z] [runtime-status] [17349] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-16T23:32:25.910Z] [runtime-status] [17349] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-16T23:32:26.054Z] [runtime-status] [17349] Found google-gax at /Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-01-16T23:32:26.054Z] [runtime-status] [17349] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-01-16T23:32:26.086Z] [runtime-status] [17349] Checked functions.config() {"config":{}}
+[debug] [2020-01-16T23:32:26.087Z] [runtime-status] [17349] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-16T23:32:26.087Z] [runtime-status] [17349] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-16T23:32:26.088Z] [runtime-status] [17349] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-16T23:32:26.116Z] [runtime-status] [17349] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.1","resolution":"/Users/jhummel/repos/duda-widgets/spotify/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-01-16T23:32:26.509Z] [runtime-status] [17349] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-16T23:32:26.509Z] [runtime-status] [17349] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-16T23:32:26.509Z] [runtime-status] [17349] Running api in mode HTTPS
+[debug] [2020-01-16T23:32:26.512Z] [runtime-status] [17349] Attempting to listen to socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-16T23:32:26.516Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-16T23:32:26.522Z] [runtime-status] [17349] Ephemeral server handling GET request
+[debug] [2020-01-16T23:32:26.529Z] [runtime-status] [17349] Ephemeral server survived.
+[warn] ⚠  External network resource requested!
+   - URL: "https://accounts.spotify.com/api/token"
+ - Be careful, this may be a production service.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-16T23:32:26.774Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: IDLE
+[debug] [2020-01-16T23:32:26.774Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-16T23:32:26.782Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-16T23:32:26.782Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-16T23:32:26.782Z] Accepted request OPTIONS /duda-custom-spotify-widget/us-central1/api/spotify/artists/2cCUtGK9sDU2EoElnk0GNB --> api
+[debug] [2020-01-16T23:32:26.782Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-16T23:32:26.782Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-16T23:32:26.782Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: BUSY
+[debug] [2020-01-16T23:32:26.785Z] [runtime-status] [17349] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-16T23:32:26.785Z] [runtime-status] [17349] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-16T23:32:26.785Z] [runtime-status] [17349] Running api in mode HTTPS
+[debug] [2020-01-16T23:32:26.785Z] [runtime-status] [17349] Attempting to listen to socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-16T23:32:26.787Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-16T23:32:26.789Z] [runtime-status] [17349] Ephemeral server handling OPTIONS request
+[debug] [2020-01-16T23:32:26.790Z] [runtime-status] [17349] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-16T23:32:26.791Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: IDLE
+[debug] [2020-01-16T23:32:26.791Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-16T23:32:26.792Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-16T23:32:26.792Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-16T23:32:26.792Z] Accepted request GET /duda-custom-spotify-widget/us-central1/api/spotify/artists/2cCUtGK9sDU2EoElnk0GNB --> api
+[debug] [2020-01-16T23:32:26.792Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-16T23:32:26.792Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-16T23:32:26.792Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: BUSY
+[debug] [2020-01-16T23:32:26.801Z] [runtime-status] [17349] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-16T23:32:26.801Z] [runtime-status] [17349] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-16T23:32:26.801Z] [runtime-status] [17349] Running api in mode HTTPS
+[debug] [2020-01-16T23:32:26.801Z] [runtime-status] [17349] Attempting to listen to socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-16T23:32:26.802Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-16T23:32:26.804Z] [runtime-status] [17349] Ephemeral server handling GET request
+[debug] [2020-01-16T23:32:26.804Z] [runtime-status] [17349] Ephemeral server survived.
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.spotify.com/v1/artists/2cCUtGK9sDU2EoElnk0GNB"
+ - Be careful, this may be a production service.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-16T23:32:27.022Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: IDLE
+[debug] [2020-01-16T23:32:27.022Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-16T23:32:27.041Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-16T23:32:27.041Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-16T23:32:27.041Z] Accepted request OPTIONS /duda-custom-spotify-widget/us-central1/api/spotify/artists/2cCUtGK9sDU2EoElnk0GNB/top-tracks?country=US --> api
+[debug] [2020-01-16T23:32:27.041Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-16T23:32:27.041Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-16T23:32:27.041Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: BUSY
+[debug] [2020-01-16T23:32:27.041Z] [runtime-status] [17349] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-16T23:32:27.042Z] [runtime-status] [17349] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-16T23:32:27.042Z] [runtime-status] [17349] Running api in mode HTTPS
+[debug] [2020-01-16T23:32:27.042Z] [runtime-status] [17349] Attempting to listen to socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-16T23:32:27.043Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-16T23:32:27.046Z] [runtime-status] [17349] Ephemeral server handling OPTIONS request
+[debug] [2020-01-16T23:32:27.046Z] [runtime-status] [17349] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-16T23:32:27.047Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: IDLE
+[debug] [2020-01-16T23:32:27.047Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-16T23:32:27.048Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-16T23:32:27.048Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-16T23:32:27.048Z] Accepted request GET /duda-custom-spotify-widget/us-central1/api/spotify/artists/2cCUtGK9sDU2EoElnk0GNB/top-tracks?country=US --> api
+[debug] [2020-01-16T23:32:27.048Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-16T23:32:27.048Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-16T23:32:27.048Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: BUSY
+[debug] [2020-01-16T23:32:27.059Z] [runtime-status] [17349] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-16T23:32:27.059Z] [runtime-status] [17349] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-16T23:32:27.059Z] [runtime-status] [17349] Running api in mode HTTPS
+[debug] [2020-01-16T23:32:27.059Z] [runtime-status] [17349] Attempting to listen to socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-16T23:32:27.060Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-16T23:32:27.062Z] [runtime-status] [17349] Ephemeral server handling GET request
+[debug] [2020-01-16T23:32:27.062Z] [runtime-status] [17349] Ephemeral server survived.
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.spotify.com/v1/artists/2cCUtGK9sDU2EoElnk0GNB/top-tracks?country=US"
+ - Be careful, this may be a production service.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-16T23:32:27.293Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: IDLE
+[debug] [2020-01-16T23:32:27.293Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-17T17:39:19.800Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-17T17:39:19.801Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-17T17:39:19.801Z] Accepted request GET /duda-custom-spotify-widget/us-central1/api/token --> api
+[debug] [2020-01-17T17:39:19.801Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-17T17:39:19.801Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-17T17:39:19.802Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: BUSY
+[debug] [2020-01-17T17:39:19.803Z] [runtime-status] [17349] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-17T17:39:19.804Z] [runtime-status] [17349] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-17T17:39:19.804Z] [runtime-status] [17349] Running api in mode HTTPS
+[debug] [2020-01-17T17:39:19.804Z] [runtime-status] [17349] Attempting to listen to socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-17T17:39:19.807Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-17T17:39:19.812Z] [runtime-status] [17349] Ephemeral server handling GET request
+[debug] [2020-01-17T17:39:19.815Z] [runtime-status] [17349] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-17T17:39:19.989Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: IDLE
+[debug] [2020-01-17T17:39:19.989Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-17T17:39:20.003Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-17T17:39:20.004Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-17T17:39:20.004Z] Accepted request OPTIONS /duda-custom-spotify-widget/us-central1/api/spotify/artists/2cCUtGK9sDU2EoElnk0GNB --> api
+[debug] [2020-01-17T17:39:20.004Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-17T17:39:20.004Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-17T17:39:20.004Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: BUSY
+[debug] [2020-01-17T17:39:20.004Z] [runtime-status] [17349] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-17T17:39:20.005Z] [runtime-status] [17349] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-17T17:39:20.005Z] [runtime-status] [17349] Running api in mode HTTPS
+[debug] [2020-01-17T17:39:20.005Z] [runtime-status] [17349] Attempting to listen to socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-17T17:39:20.006Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-17T17:39:20.008Z] [runtime-status] [17349] Ephemeral server handling OPTIONS request
+[debug] [2020-01-17T17:39:20.009Z] [runtime-status] [17349] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-17T17:39:20.009Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: IDLE
+[debug] [2020-01-17T17:39:20.009Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-17T17:39:20.011Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-17T17:39:20.011Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-17T17:39:20.012Z] Accepted request GET /duda-custom-spotify-widget/us-central1/api/spotify/artists/2cCUtGK9sDU2EoElnk0GNB --> api
+[debug] [2020-01-17T17:39:20.012Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-17T17:39:20.012Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-17T17:39:20.012Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: BUSY
+[debug] [2020-01-17T17:39:20.019Z] [runtime-status] [17349] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-17T17:39:20.020Z] [runtime-status] [17349] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-17T17:39:20.020Z] [runtime-status] [17349] Running api in mode HTTPS
+[debug] [2020-01-17T17:39:20.020Z] [runtime-status] [17349] Attempting to listen to socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-17T17:39:20.021Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-17T17:39:20.023Z] [runtime-status] [17349] Ephemeral server handling GET request
+[debug] [2020-01-17T17:39:20.023Z] [runtime-status] [17349] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-17T17:39:20.197Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: IDLE
+[debug] [2020-01-17T17:39:20.197Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-17T17:39:20.213Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-17T17:39:20.213Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-17T17:39:20.214Z] Accepted request OPTIONS /duda-custom-spotify-widget/us-central1/api/spotify/artists/2cCUtGK9sDU2EoElnk0GNB/top-tracks?country=US --> api
+[debug] [2020-01-17T17:39:20.214Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-17T17:39:20.214Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-17T17:39:20.214Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: BUSY
+[debug] [2020-01-17T17:39:20.214Z] [runtime-status] [17349] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-17T17:39:20.214Z] [runtime-status] [17349] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-17T17:39:20.215Z] [runtime-status] [17349] Running api in mode HTTPS
+[debug] [2020-01-17T17:39:20.215Z] [runtime-status] [17349] Attempting to listen to socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-17T17:39:20.215Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-17T17:39:20.217Z] [runtime-status] [17349] Ephemeral server handling OPTIONS request
+[debug] [2020-01-17T17:39:20.218Z] [runtime-status] [17349] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-17T17:39:20.218Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: IDLE
+[debug] [2020-01-17T17:39:20.218Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-17T17:39:20.224Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-17T17:39:20.224Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-17T17:39:20.224Z] Accepted request GET /duda-custom-spotify-widget/us-central1/api/spotify/artists/2cCUtGK9sDU2EoElnk0GNB/top-tracks?country=US --> api
+[debug] [2020-01-17T17:39:20.224Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-17T17:39:20.225Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: Assigning socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-17T17:39:20.225Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: BUSY
+[debug] [2020-01-17T17:39:20.228Z] [runtime-status] [17349] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-17T17:39:20.229Z] [runtime-status] [17349] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-17T17:39:20.229Z] [runtime-status] [17349] Running api in mode HTTPS
+[debug] [2020-01-17T17:39:20.229Z] [runtime-status] [17349] Attempting to listen to socketPath: /var/folders/7r/vj1dml7j1xn5tbfhcnnbg0580000gn/T/fire_emu_17349.sock
+[debug] [2020-01-17T17:39:20.230Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-17T17:39:20.232Z] [runtime-status] [17349] Ephemeral server handling GET request
+[debug] [2020-01-17T17:39:20.233Z] [runtime-status] [17349] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-17T17:39:20.513Z] [worker-api-34e1e45e-0027-4adb-b59d-dcc775ee1931]: IDLE
+[debug] [2020-01-17T17:39:20.513Z] [work-queue] {"queueLength":0,"workRunningCount":0}
