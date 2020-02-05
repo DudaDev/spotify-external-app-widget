@@ -1,0 +1,52 @@
+.tracks {
+  list-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.track {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: stretch;
+}
+
+.track:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trackButton {
+  color: inherit;
+  appearance: none;
+  border: 0;
+  background: none;
+  display: flex;
+  padding: 10px 20px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.4;
+}
+
+
+.trackButton:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.trackName {
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.trackDuration {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.trackAlbum {
+  font-size: 10px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}

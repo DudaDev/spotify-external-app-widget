@@ -2,6 +2,7 @@ import React, {useContext, useEffect, useReducer} from 'react';
 import PropTypes from 'prop-types';
 
 import fetch from 'config';
+import { useSpotifyState } from 'providers/Spotify';
 
 const ARTIST = {
   FETCH_REQUEST: 'FETCH_REQUEST',
@@ -40,7 +41,8 @@ ArtistProvider.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default function ArtistProvider ({ children }) {
+export default function ArtistProvider ({ artistId, children }) {
+  const { token } = useSpotifyState();
   const [artist, dispatch] = useReducer(artistReducer, {
     data: undefined,
     error: undefined,
@@ -48,8 +50,9 @@ export default function ArtistProvider ({ children }) {
   });
 
   useEffect(() => {
-    getArtist(dispatch)
-  }, []);
+    if (token)
+      getArtist(artistId, dispatch)
+  }, [artistId, token]);
 
   return (
     <ArtistStateContext.Provider value={artist}>
@@ -58,10 +61,10 @@ export default function ArtistProvider ({ children }) {
   );
 }
 
-function getArtist (dispatch) {
+function getArtist (artistId, dispatch) {
   dispatch({ type: ARTIST.FETCH_REQUEST });
   fetch
-    .get('/spotify/artists/2cCUtGK9sDU2EoElnk0GNB')
+    .get(`/spotify/artists/${artistId}`)
     .then(response => dispatch({ type: ARTIST.FETCH_SUCCESS, artist: response.data }))
     .catch((error) => dispatch({ type: ARTIST.FETCH_FAILURE, error }));
 }
