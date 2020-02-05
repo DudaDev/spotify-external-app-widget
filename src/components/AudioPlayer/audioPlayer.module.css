@@ -1,0 +1,79 @@
+.currentTrack {
+  position: relative;
+}
+
+.albumImage {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.allInfo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  text-align: left;
+  z-index: 10;
+}
+
+.trackInfo {
+  flex: 1;
+  padding-left: 10px;
+  line-height: 1.4;
+}
+
+.trackTitle {
+  font-size: 16px;
+}
+
+.trackAlbum {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.trackProgress {
+  font-size: 11px;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+.trackDuration {
+  opacity: 0.7;
+}
+.controlsContainer {
+  background: #39D1A7;
+  display: flex;
+  align-items: stretch;
+}
+
+.controlButton {
+  appearance: none;
+  background: 0;
+  padding: 15px;
+  margin: 0;
+  border: none;
+  border-left: 1px solid #30C7A0;
+  flex: 1;
+}
+
+.controlButton:first-child {
+  border-left: none;
+}
+
+.progressContainer {
+  margin: 0 10px 10px 10px;
+}
+.currentTrack .progressBackground {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.currentTrack .progressActive {
+  background-color: #39D1A7;
+}
+
+
