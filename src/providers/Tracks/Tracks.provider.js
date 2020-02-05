@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useReducer } from 'react';
 import PropTypes from 'prop-types';
 
 import fetch from 'config';
+import { useArtistState } from 'providers/Artist';
 
 const TRACKS = {
   FETCH_REQUEST: 'FETCH_REQUEST',
@@ -37,11 +38,11 @@ function tracksReducer (state, action) {
 }
 
 TracksProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-  artistId: PropTypes.string.isRequired
+  children: PropTypes.node.isRequired
 };
 
-export default function TracksProvider ({ children, artistId }) {
+export default function TracksProvider ({ children }) {
+  const { data: artist } = useArtistState();
   const [tracks, dispatch] = useReducer(tracksReducer, {
     data: undefined,
     error: undefined,
@@ -49,8 +50,9 @@ export default function TracksProvider ({ children, artistId }) {
   });
 
   useEffect(() => {
-    getTracks(dispatch, artistId);
-  }, [artistId]);
+    if (artist)
+      getTracks(dispatch, artist.id);
+  }, [artist]);
 
   return (
     <TracksStateContext.Provider value={tracks}>

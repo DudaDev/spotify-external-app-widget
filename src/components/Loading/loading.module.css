@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.circle {
+  color: #39D1A7;
+}

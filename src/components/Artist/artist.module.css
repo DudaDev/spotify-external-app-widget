@@ -1,0 +1,30 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+}
+
+.artistHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.artistTracks {
+  flex: 1 1 100%;
+}
+
+.artistName {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  opacity: 0.5
+}
+
+.spotifyLogo {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
