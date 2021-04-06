@@ -1,68 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Spotify External Application for Duda Custom Widgets
 
-## Available Scripts
+This is the supplemental code repository to [this blog article](https://blog.duda.co/how-to-use-external-apps-to-power-custom-widgets-in-duda). The code is structured to allow it to run within a Duda widget or as a standalone application. [Rescripts](https://www.npmjs.com/package/@rescripts/cli) is being used to update our configuration to include CSS within the same package as the JS, and output the package as UMD.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+The frontend needs a middleware to authorize with the [Spotify API](https://developer.spotify.com/documentation/web-api/). The middleware will request an authorization token from Spotify, and then proxy all other requests straight to the Spotify API, including the authorization token in the headers of the request. The repo includes an example [Firebase Cloud Function](https://firebase.google.com/docs/functions) that can act as this middleware. To retrieve a client id and secret, you must set up a developer account and register an application with Spotify, after which, you will then be able to retrieve the information from the [developer application dashboard](https://developer.spotify.com/dashboard/applications).
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If using the included Firebase function, you will need a new project in the [Firebase console](https://console.firebase.google.com). Your environemnt must be then setup as outlined in the [getting started guide](https://firebase.google.com/docs/functions/get-started). The spotify client ID and secret, should be set as [environmental variables](https://firebase.google.com/docs/functions/config-env) within your Firebase function. To set the environment run the following command in the `functions` directory:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+`firebase functions:config:set spotify.id="<CLIENT_ID>" spotify.secret="<CLIENT_SECRET>" spotify.base="https://api.spotify.com" spotify.path="/v1"`
 
-### `npm test`
+Once your middleware is set, you should set the URL of the API in the react application by creating a file called `.env.production` in the root of the project and adding the following line:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`REACT_APP_API_BASE_URL=<https://mydomain.com/path-to-api-base`
 
-### `npm run build`
+You are also able to add a `.env.development` file to specify a different URL while doing local testing.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Available Scripts in the `functions` directory
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+`npm run serve` start a local Firebase functions emulator. The URL output should be added to your `.env.development` file
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm run deploy` deploy the function to Firebase. The resulting URL should be added to your `.env.production` file
 
-### `npm run eject`
+## Available Scripts for the React application
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`npm start` compile and serve the application locally.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm run build` compile the code to the build folder. Rescripts will be used to modify the default create react app behavior to include CSS in the same file as your JS. It will also result in the output being in the UMD format instead of CJS. (Required for Duda external applications.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+`npm run deploy` deploys the contents of the build folder to Firebase hosting and the function to cloud functions.
