@@ -1,0 +1,9 @@
+{
+  "spotify": {
+    "id": "0e0a1f4ec0184de4ab1642a1734f7d75",
+    "secret": "6ed4ebd5840746da9f33f56bad6fc5af",
+    "base": "https://api.spotify.com",
+    "path": "/v1"
+  }
+}
+
